@@ -1,33 +1,112 @@
-.App {
+#bg{
+  background-image: url("/img/bg.jpg");
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+}
+.card-principal{
+  background-color: #272940;
+}
+.header-card{
+  background-image: url("/img/header-background.png");
+  padding: 15px;
+  background-size: cover;
+
+  background-position: center;
+  background-position-x: 30%;
+  box-shadow: 0px 0px 10px #1f2130;
+}
+.avatar img{
+  width: 70px;
+  
+  border-radius: 500px;
+  border: 2px solid #96b301;
+}
+.nome{
+  color: #fff;
+}
+.nome p{
+    color: #76789e;
+    font-size: 12px;
+    font-weight: 700;
+}
+.progresso{
+
+    color:#fff;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+.pin-top{
+  padding: 2px;
+}
+.item{
+  padding:5px;
+}
+.progress{
+  width: 100%;
+  background: #27283c;
+  border: 1px solid #27283c;
+  border-radius: 50px;
+}
+.progress-bar{
+  background-color: #6263cf; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,  #6e9ee6, #6263cf); /* Standard syntax */
+ 
+  border: 2px solid #27283c;
+  border-radius: 50px;
+}
+.rotate{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari 3-8 */
+  transform: rotate(180deg);
+}
+.casual, .amador, .competitivo, .pro{
+  width: 25%;
+}
+.casual{
+  margin-left: 15%;
+}
+.amador{
+  margin-left: 23%;
+}
+.competitivo{
+  margin-left: 33%;
+}
+.pro{
+  margin-left: 30%;
+  width: 12%;
+}
+.itens-header{
+  padding-top: 5%;
+}
+.itens-header img{
+  width: 18%;
+  margin-top: 2%;
+}
+.placar{
+  width: 14%;
+  /* height: 18%; */
   text-align: center;
+  color: #fff;
+  padding: 3px;
+  float: right;
+  margin-right: 29%;
+  margin-top: 3%;
+  border-radius: 500px;
+  border: 2px solid #525367;
 }
+.premium{
+  position: absolute;
+    right: 0;
+    top: -15px;
+    width: 27%;
+    background-image: radial-gradient(#26c5ef, #3587d9);
+    height: 114px;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.premium img{
+  width: 50%;
+  margin-top: 45%;
+  margin-left: 25%;
 }
