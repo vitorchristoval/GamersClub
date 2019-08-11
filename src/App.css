@@ -2,7 +2,7 @@
   background-image: url("/img/bg.jpg");
   height: 100%;
   width: 100%;
-  padding: 10%;
+  padding: 3%;
 }
 .card-principal{
   background-color: #272940;
@@ -109,4 +109,179 @@
   width: 50%;
   margin-top: 45%;
   margin-left: 25%;
+}
+.card-body{
+  color: #fff;
+  font-size: 14px;
+
+}
+.forFun{
+  
+  background-image: url("/img/Csgo-de-overpass.png");
+  background-size: cover;
+  background-color: #313450c0;
+  background-blend-mode: overlay;
+  height: 200px;
+  margin-right:10px;
+  width: 100%;
+  padding: 10%;
+  border: 1px solid #868692;
+}
+.title{
+  font-weight: 700;
+}
+.title img{
+  width: 30px;
+  padding-bottom: 15px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  transition: .5s ease;
+  background-color: #313450c0;
+  z-index: 0;
+}
+.top-buttons{
+  position: absolute;
+  z-index: 2;
+}
+.top-buttons button{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-top: -30px !important;
+  text-align: center;
+  align-content: center;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.178);
+  border: 0.4px solid #fff;
+  border-radius: 5px;
+  box-shadow: 1px, 0px, 0px, #000;
+  font-size: 14px;
+}
+.join{
+  background-image: radial-gradient(#abc200, #8bab00) !important; 
+}
+.card-game{
+  background-image:linear-gradient(to bottom,  #37384a, #272940);  
+  height: 160px;
+  padding: 10px;
+  border: 5px solid #272940;
+}
+.server{
+  z-index: 2;
+  position: absolute;
+  bottom: 65px;
+}
+.server h6{
+  color: #fff;
+  font-size: 13px;
+}
+.server h5{
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.server span{
+  color: #fff;
+  font-size: 13px;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+.map{
+  position: absolute;
+  color: #fff;
+}
+.map > .progress{
+  margin-top: 10px;
+}
+ .owl-stage::after{
+display: none;
+}
+.cards{
+
+  border-left: 1px solid #868692;
+  border-bottom: 1px solid #868692;
+  padding: 30px;
+  margin-top: -20px;
+  z-index: 0;
+}
+.ctaLobby{
+  background: #e0c23e;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.ctaLobby:hover{
+  background: #d3b531;
+  color: #fff;
+ text-decoration: none;
+}
+
+.ctaRanked{
+  background: #34abe5;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.ctaRanked:hover{
+  background: #34abe5;
+  color: #fff;
+ text-decoration: none;
+}.title2 img{
+  width: 20px;
+  padding-bottom: 8px;
+  margin-right: 10px;
+}
+.title2{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.partidas, .vitorias, .derrotas{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.vitorias{
+  color: #92a900
+}
+.derrotas{
+  color:#fc3637;
+}
+.partidasRanked{
+  color:#34abe5;
+}
+.partidasLobby{
+  color: #e0c23e;
+}
+.antiCheat button{
+  background-color: #2f3042;
+  width: 45%;
+  color: #b6b8c7;
+margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+}
+.online p, .banidos p{
+  margin: 0;
+  padding: 0;
+}
+.online, .banidos{
+  padding: 10px;
+}
+.online h4, .banidos h4{
+  font-size: 33px;
 }
