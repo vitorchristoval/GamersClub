@@ -1,3 +1,10 @@
+body{
+  font-family: Poppins,sans-serif;
+  font-style: normal;
+  color: #ddd;
+  background-color: #151426;
+  
+}
 #bg{
   background-image: url("/img/bg.jpg");
   height: 100%;
@@ -81,8 +88,9 @@
   padding-top: 5%;
 }
 .itens-header img{
-  width: 18%;
-  margin-top: 2%;
+  width: 13%;
+  margin-left: 10px;
+  margin-top: 0%;
 }
 .placar{
   width: 14%;
@@ -107,7 +115,7 @@
 }
 .premium img{
   width: 50%;
-  margin-top: 45%;
+  margin-top: 35%;
   margin-left: 25%;
 }
 .card-body{
@@ -204,13 +212,18 @@
 }
  .owl-stage::after{
 display: none;
-}
+ }
+ .card-body{
+   padding: 0;
+ }
+ .borderLeft{
+  border-left: 1px solid #3b3f5c;
+ }
+ .borderBottom{
+  border-bottom: 1px solid #3b3f5c;
+ }
 .cards{
-
-  border-left: 1px solid #868692;
-  border-bottom: 1px solid #868692;
   padding: 30px;
-  margin-top: -20px;
   z-index: 0;
 }
 .ctaLobby{
@@ -250,7 +263,7 @@ display: none;
   font-weight: 700;
   text-transform: uppercase;
 }
-.partidas, .vitorias, .derrotas{
+.partidas, .partidasLobby, .partidasRanked, .vitorias, .derrotas{
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -268,7 +281,7 @@ display: none;
 }
 .antiCheat button{
   background-color: #2f3042;
-  width: 45%;
+  width: 50%;
   color: #b6b8c7;
 margin-top: 10px;
   border: none;
@@ -279,9 +292,18 @@ margin-top: 10px;
   margin: 0;
   padding: 0;
 }
+.online h4, .online span{
+  color: #2c97df;
+}
+.banidos h4, .banidos span{
+  color: #eb2f2e;
+}
 .online, .banidos{
   padding: 10px;
 }
 .online h4, .banidos h4{
   font-size: 33px;
+}
+.banidos{
+  margin-left: 10px;
 }
