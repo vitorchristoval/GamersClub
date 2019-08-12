@@ -5,6 +5,8 @@ import axios from 'axios';
 import OwlCarousel from 'react-owl-carousel2';
 import Notifications, { notify } from 'react-notify-toast';
 import Header from './Header';
+import copy from 'clipboard-copy'
+
 class Body extends Component {
     constructor(props) {
         super(props);
@@ -29,6 +31,7 @@ class Body extends Component {
         //document.execCommand("copy");
         notify.show('Copiado!');
     }
+   
     componentDidMount() {
 
 
@@ -51,6 +54,7 @@ class Body extends Component {
 
 
             <div className="card-body">
+                
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-md-6 cards borderBottom">
@@ -62,17 +66,18 @@ class Body extends Component {
                                 {this.props.server.map(function (item, i) {
                                     return <div className="forFun col-md-12">
                                         <div className="top-buttons">
-                                            <button onClick={() => this.copiarText()}><i class="far fa-copy" ></i></button>
-                                            <button className="join" onClick={() => alert(item.join)}><i class="fas fa-sign-in-alt"></i></button>
+                                            <button onClick={() =>  (copy(item.join), notify.show('Copiado! 🎮 ', 'success'))}><i class="far fa-copy" ></i></button>
+                                            <button className="join" onClick={() => window.open(item.join,  '_blank')}><i class="fas fa-sign-in-alt"></i></button>
                                         </div>
                                         <div className="server">
                                             <h6>#{item.id} - {item.title}</h6>
                                             <h5>{item.mode}</h5>
-
+                                         
                                             <div className="map">
                                                 <span>{item.map}  {item.current}/{item.max}</span>
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  
+                                                    <div class="progress-bar" role="progressbar" style={{ width: ((item.max - item.current) / item.max  * 100 )+ '%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,7 +132,7 @@ class Body extends Component {
                                         </div>
 
                                     </div>
-                                    <div className="col-md-7 row banidos">
+                                    <div className="col-md-6 row banidos">
                                         <div className="col-md-3">
                                             <h4>{this.props.data.latest_banned}</h4>
                                         </div>

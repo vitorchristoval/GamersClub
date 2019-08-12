@@ -10,7 +10,7 @@ import Body from './Body';
 class Home extends Component {
     constructor(props) {
         super(props);
-        this.copiarText = this.copiarText.bind(this);
+      
     }
     state = {
         data: [],
@@ -23,6 +23,7 @@ class Home extends Component {
         loading: false,
     }
 
+    
     componentWillMount() {
         let _this = this;
         axios.get(API.url)

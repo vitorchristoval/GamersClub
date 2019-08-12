@@ -93,13 +93,13 @@ body{
   margin-top: 0%;
 }
 .placar{
-  width: 14%;
+  width: 35px;
   /* height: 18%; */
   text-align: center;
   color: #fff;
   padding: 3px;
   float: right;
-  margin-right: 29%;
+  margin-right: 33%;
   margin-top: 3%;
   border-radius: 500px;
   border: 2px solid #525367;
@@ -115,7 +115,7 @@ body{
 }
 .premium img{
   width: 50%;
-  margin-top: 35%;
+  margin-top: 30%;
   margin-left: 25%;
 }
 .card-body{
@@ -206,6 +206,8 @@ body{
 .map{
   position: absolute;
   color: #fff;
+  width: 100%;
+  
 }
 .map > .progress{
   margin-top: 10px;
