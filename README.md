@@ -6,11 +6,11 @@ Faça o clone do projeto, e instale os pacotes de npm com
 
 ### `npm install`
 
-Para rodas os pacotes desse projeto ;)
+Para rodar os pacotes desse projeto ;)
 
 ### `npm start`
 
-Para rodas a aplicação.<br>
+Para rodar a aplicação.<br>
 Abra [http://localhost:3000](http://localhost:3000)  para ver no browser.
 
 A página faz o reload automática após cada atualização salva.<br>
@@ -27,6 +27,3 @@ Você pode dar uma olhada na documentação do React ->  [Create React App docum
 E se quiser aprender React ;) ->  [React documentation](https://reactjs.org/).
 
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
